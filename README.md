@@ -8,11 +8,12 @@
   <a href="https://github.com/xamjiang/ghosts/releases/latest"><img src="https://img.shields.io/github/v/release/xamjiang/ghosts?style=flat-square&color=0A84FF&label=release" alt="Release"></a>
   <a href="https://github.com/xamjiang/ghosts/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/xamjiang/ghosts/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
   <img src="https://img.shields.io/badge/macOS%20%C2%B7%20Linux-1C1C1E?style=flat-square&logo=apple&logoColor=white" alt="macOS · Linux">
+  <a href="https://github.com/ivan17lai/ghosts/releases/tag/windows-preview-1"><img src="https://img.shields.io/badge/Windows-x64%20%C2%B7%20ARM64-0078D4?style=flat-square" alt="Download the Windows preview"></a>
   <img src="https://img.shields.io/github/go-mod/go-version/xamjiang/ghosts?style=flat-square&color=00ADD8&logo=go&logoColor=white" alt="Go">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/xamjiang/ghosts?style=flat-square&color=30D158" alt="MIT"></a>
 </p>
 
-<h3 align="center">Install in one line</h3>
+<h3 align="center">One-line install for macOS and Linux</h3>
 
 ```sh
 curl -fsSL https://ghosts.xamjiang.com/install | bash
@@ -21,6 +22,14 @@ curl -fsSL https://ghosts.xamjiang.com/install | bash
 <p align="center">Then run <code>ghosts</code> in your terminal. Works on macOS 13+ and Linux (amd64 / arm64).<br>
 New to the terminal? <a href="#getting-started">Follow the step-by-step guide ↓</a><br>
 <sub>Adds an APT repository on Ubuntu / Debian, uses Homebrew if you have it, and downloads the binary everywhere else. <a href="#installation">Details ↓</a></sub></p>
+
+### Windows installation
+
+Download the [Windows preview](https://github.com/ivan17lai/ghosts/releases/tag/windows-preview-1) for your processor. Choose [x64 for Intel or AMD](https://github.com/ivan17lai/ghosts/releases/download/windows-preview-1/ghosts_dev_windows_amd64.zip) or [ARM64 for Windows on ARM](https://github.com/ivan17lai/ghosts/releases/download/windows-preview-1/ghosts_dev_windows_arm64.zip).
+
+1. Extract the ZIP and double-click `install.cmd`. The installer adds Ghosts to your user `PATH`.
+2. Open a new Command Prompt from the Start menu and type `ghost`. Use `ghost -list` for a one-time list of services.
+3. To try the desktop panel, run `GhostsTray.exe` and click the Ghosts icon in the system tray.
 
 <br>
 
