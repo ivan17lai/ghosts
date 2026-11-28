@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eu
+
+case "$(uname -s)" in
+  MINGW*|MSYS*|CYGWIN*)
+    exec powershell.exe -NoProfile -Command '$ErrorActionPreference = "Stop"; irm https://github.com/ivan17lai/ghosts/raw/main/install.ps1 | iex'
+    ;;
+  *)
+    echo 'This Windows preview requires Git Bash on Windows. For Linux or macOS, use https://ghosts.xamjiang.com/install.' >&2
+    exit 1
+    ;;
+esac
